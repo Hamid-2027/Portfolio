@@ -27,11 +27,6 @@ const Slider = () => {
           // path:" require('../images/image2.png')",
           caption: 'Slide 2'
         },
-        {
-          url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
-          // path:" require('../images/image3.png')",
-          caption: 'Slide 3'
-        },
       ];
   return (
     <div className="slide-container">
