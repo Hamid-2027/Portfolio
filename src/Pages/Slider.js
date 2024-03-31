@@ -2,7 +2,6 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-
 const Slider = () => {
     const spanStyle = {
         padding: '20px',
@@ -39,7 +38,6 @@ const Slider = () => {
     <Slide>
      {slideImages.map((slideImage, index)=> (
         <div key={index}>
-          {/* <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.path})` }}> */}
           <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
           </div>
             <span style={spanStyle}>{slideImage.caption}</span>
