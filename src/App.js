@@ -3,15 +3,15 @@ import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Nav from './Components/Navbar';
 import Footer from "./Components/Footer";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/home.js";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";
 import Project from "./Pages/Projects";
-import Slider from "./Pages/Slider";
 import MoveToTop from "./Components/MoveToTop";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
+import './Pages/Home/home.css';
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
       <div className="loader"> 
         <HashLoader
           color={'#9067C6'}
+          // color={'white'}
           loading={true}
           size={100}
           aria-label="Loading Spinner"
@@ -42,7 +43,7 @@ function App() {
       
       <Lottie className="bg" animationData={nightsky} loop={true} />  
       <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
-      <Lottie className="bgtemp" animationData={nightsky} loop={true} /> 
+      <Lottie className="bgtemp" animationData={nightsky} loop={true} />
 
       <Nav/>
       <MoveToTop/>
@@ -50,7 +51,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About/>}/>
-        {/* <Route path="/About" element={<Slider/>}/> */}
+       {/* <Route path="/About" element={<Slider/>}/>  */}
         <Route path="/Project" element={<Project/>}/>
         <Route path="/Resume" element={<Resume/>}/>
       </Routes>

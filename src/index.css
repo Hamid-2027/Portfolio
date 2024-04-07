@@ -20,9 +20,10 @@
 
 body{
   font-family: 'Raleway', sans-serif;
-  background-color: #031926;
-  color: #E7E7E7;
+  /* background-color: #031926; */
+  color: #E7E7E7;    
   min-height: 100vh;
+  border: 12px solid black;
   
 }
 
@@ -105,6 +106,7 @@ b{
   padding-right: 7%;
   font-weight: 500;
   font-size: 22px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .NavbarLinks li{
@@ -205,73 +207,7 @@ b{
 }
 
 
-/* HOME PAGE */
 
-.HomePage{
-  display: flex;
-  justify-content: space-evenly;
-  min-height: 80vh;
-  margin-top: 100px;
-  margin-bottom: -50px;
-  align-items: center;
-}
-.HomeText h1{
-  font-weight: 600;
-  font-size: 38px;
-  letter-spacing: 0.7px;
-  padding-top: 10px;
-}
-
-.TypeEffect{
-  padding: 25px 0px;
-  font-weight: 600;
-  font-size: 32px;
-  letter-spacing: 0.6px;
-}
-
-.illustration{
-  width: 400px;
-  height: 400px;
-}
-
-@media(max-width:900px){
-  .HomePage{
-    display: block;
-    text-align: center;
-    margin-top: 150px;
-    padding: 25px;
-  }
-  .HomeText{
-    text-align: left;
-    display: inline-block;
-  }
-  .illustration{
-    margin: auto;
-    margin-bottom: 50px;
-  }
-}
-
-@media(max-width: 500px) {
-  .HomePage{
-    min-height: 70vh;
-  }
-  .NavbarLinks{
-    inset: 0 0 0 30%;
-  }
-  .HomeText h1{
-    font-weight: 500;
-    font-size: 28px;
-  }  
-  .TypeEffect{
-    font-weight: 500;
-    font-size: 24px;
-  }
-  .illustration{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 0px;
-  }
-}
 
 
 /* ABOUT */

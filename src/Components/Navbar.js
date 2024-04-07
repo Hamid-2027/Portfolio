@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
 import {BsPerson, BsCodeSlash} from "react-icons/bs";
 import {CgFileDocument} from "react-icons/cg";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 const Nav = () => {
@@ -55,6 +56,7 @@ const Nav = () => {
             <li onClick={hideMenu}><Link to="/About"><BsPerson/> About</Link></li>
             <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Project</Link></li>
             <li onClick={hideMenu}><Link to="/Resume"><CgFileDocument/> Resume</Link></li>
+            <AnchorLink href='#About'>About</AnchorLink>
         </ul>
         
     </nav>
