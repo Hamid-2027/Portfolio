@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home/home.js";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";
-import Project from "./Pages/Projects";
+import Project from "./Pages/Projects/Projects.js";
 import MoveToTop from "./Components/MoveToTop";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
@@ -40,11 +40,6 @@ function App() {
       </div>
       ):(
       <div>
-      
-      <Lottie className="bg" animationData={nightsky} loop={true} />  
-      <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
-      <Lottie className="bgtemp" animationData={nightsky} loop={true} />
-
       <Nav/>
       <MoveToTop/>
 
